@@ -1,0 +1,30 @@
+#navbar {
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.linav{
+    float: left;
+}
+.ref{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.ref:hover{
+    background-color: #111;
+}
+
+#fundo{
+    background-color: rgb(219, 219, 219);
+    font-family:sans-serif;
+}
+.active {
+    background-color: #04AA6D;
+}
