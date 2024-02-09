@@ -30,7 +30,7 @@ header>p{
 
     
 }
-main>p {
+main>section>p {
     font-size: 3vmax;
     font-family:   cursive;
     font-style: italic;
@@ -44,20 +44,25 @@ footer{
     height: 4vmax;
     font-size: 1.5vmax;
 }
-footer>p{margin: auto;
-padding: 10px;}
-#img1, #img2{
+footer>p{
+    margin: auto;
+    padding: 10px;
+}
+
+.imagem{
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: right center;
     width: 100%;
     height: 40vmax;
     margin-left: 0;
-
     font-size: 3vmax;
     font-family: cursive;
     font-style: italic;
     font-weight: bold;
     box-shadow: inset 5px 5px 14px rgba(0, 0, 0, 0.418);
+    text-shadow: 1px 1px 0px black;
+    background-attachment: fixed;
+
 }
 #img1>p, #img2>p{
     background-color: rgba(0, 0, 0, 0.144);
