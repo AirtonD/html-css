@@ -22,3 +22,10 @@ th{
     color: white;
     font-weight: bold;
 }
+col.carea{
+    background-color: green;
+}
+#container{
+    width: 70vw;
+    overflow-x: auto;
+}
