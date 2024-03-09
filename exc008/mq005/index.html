@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,10 +26,35 @@
         <article>
             <h2>Testando Media Queries</h2>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde qui nemo debitis assumenda rerum quo, blanditiis voluptatum iusto ut incidunt aliquid reprehenderit saepe laudantium aspernatur? Necessitatibus earum nemo atque nobis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde qui nemo debitis assumenda rerum quo, blanditiis voluptatum iusto ut incidunt aliquid reprehenderit saepe laudantium aspernatur? Necessitatibus earum nemo atque nobis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde qui nemo debitis assumenda rerum quo, blanditiis voluptatum iusto ut incidunt aliquid reprehenderit saepe laudantium aspernatur? Necessitatibus earum nemo atque nobis.</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde qui nemo debitis assumenda rerum quo, blanditiis voluptatum iusto ut incidunt aliquid reprehenderit saepe laudantium aspernatur? Necessitatibus earum nemo atque nobis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem deleniti quae aut dignissimos aperiam id saepe quam quis eaque ipsam dolor voluptate illo repellat quibusdam ipsum ipsa, praesentium omnis dolore!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta ea natus corrupti ab dolores veniam autem explicabo aliquam quasi vitae omnis doloribus ducimus, similique aut numquam nemo ipsum quos sapiente.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam nesciunt quisquam iste ex sapiente impedit quas soluta iure accusamus, harum tenetur cupiditate accusantium cum. Nostrum sunt maiores cum quo quia?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, illo corporis. Odio quam incidunt magni excepturi alias molestias eum exercitationem et. Quia odit doloremque quaerat vero hic voluptate alias? Enim?</p>
         </article>
     </main>
+    <script>
+        function clickMenu(){
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+    </script>
 </body>
 </html>
